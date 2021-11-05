@@ -1,0 +1,40 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to the nuts pug
+   div(class="container-fluid")
+        div(class="row")
+            -
+                let nuts = [
+                    {
+                        "Itemname": "Almond nuts",
+                        "Quantity": 5,
+                        "price": 100
+                    },
+                    {
+                        "Itemname": "Cashew nuts",
+                        "Quantity": 7,
+                        "price": 120.00
+                    },
+                    {
+                        "Itemname": "Pistachious nuts",
+                        "Quantity": 5,
+                        "price": 150.87
+                    },                   
+                ]
+            each v,index in nuts
+                table(style='width:100%', border='1')
+                  tr 
+                    div(class="col-sm-2" onclick=`buy(${index})`) #{v.Itemname}
+                    br
+                    br
+                    div(class="col-sm-2" onclick=`buy(${index})`) #{v.Quantity}
+                    br
+                    br
+                    div(class="col-sm-2" onclick=`buy(${index})`) #{v.price}
+  script.                
+        function buy(itemNo)
+        {
+              alert(`You purchased item ${itemNo + 1}`)
+        }

@@ -9,14 +9,14 @@ router.get('/resource', api_controller.api);
 
 /// COSTUME ROUTES ///
 // POST request for creating a Costume.
-router.post('/costumes', costume_controller.costume_create_post);
+router.post('/resource/costumes', costume_controller.costume_create_post);
 // DELETE request to delete Costume.
-router.delete('/costumes/:id', costume_controller.costume_delete);
+router.delete('/resource/costumes/:id', costume_controller.costume_delete);
 // PUT request to update Costume.
-router.put('/costumes/:id',
+router.put('/resource/costumes/:id',
 costume_controller.costume_update_put);
 // GET request for one Costume.
-router.get('/costumes/:id', costume_controller.costume_detail);
+router.get('/resource/costumes/:id', costume_controller.costume_detail);
 // GET request for list of all Costume items.
-router.get('/costumes', costume_controller.costume_list);
+router.get('/resource/costumes', costume_controller.costume_list);
 module.exports = router;

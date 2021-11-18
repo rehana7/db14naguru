@@ -47,7 +47,7 @@ app.use('/nuts', nutsRouter);
 app.use('/addmods', addmodsRouter);
 app.use('/selector', selectorRouter);
 app.use('/',resource);
-app.use('/monkey',monkey);
+app.use('/costumes',monkey);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

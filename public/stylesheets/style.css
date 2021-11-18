@@ -10,3 +10,12 @@ a {
   background-color: aquamarine;
   width: 120px;
  }
+
+ .costumeA {
+  background-color: rgba(72, 108, 226, 0.486);
+  width: 120px;
+ }
+ .costumeB {
+  background-color: rgb(238, 204, 10);
+  width: 120px;
+ }
